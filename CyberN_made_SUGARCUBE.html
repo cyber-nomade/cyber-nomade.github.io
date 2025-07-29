@@ -99,6 +99,38 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 <style id="style-ui-debug-views" type="text/css">html[data-debug-view] .debug{padding:.25em;background-color:#234}html[data-debug-view] .debug[title]{cursor:help}html[data-debug-view] .debug.block{display:inline-block;vertical-align:middle}html[data-debug-view] .debug.invalid{text-decoration:line-through}html[data-debug-view] .debug.hidden,html[data-debug-view] .debug.hidden .debug{background-color:#555}html:not([data-debug-view]) .debug.hidden{display:none}html[data-debug-view] .debug[data-name][data-type].nonvoid::after,html[data-debug-view] .debug[data-name][data-type]::before{background-color:rgba(0,0,0,.25);font-family:monospace,monospace;white-space:pre}html[data-debug-view] .debug[data-name][data-type]::before{content:attr(data-name)}html[data-debug-view] .debug[data-name][data-type|=macro]::before{content:"<<" attr(data-name) ">>"}html[data-debug-view] .debug[data-name][data-type|=macro].nonvoid::after{content:"<</" attr(data-name) ">>"}html[data-debug-view] .debug[data-name][data-type|=html]::before{content:"<" attr(data-name) ">"}html[data-debug-view] .debug[data-name][data-type|=html].nonvoid::after{content:"</" attr(data-name) ">"}html[data-debug-view] .debug[data-name][data-type]:not(:empty)::before{margin-right:.25em}html[data-debug-view] .debug[data-name][data-type].nonvoid:not(:empty)::after{margin-left:.25em}html[data-debug-view] .debug[data-name][data-type|=special],html[data-debug-view] .debug[data-name][data-type|=special]::before{display:block}</style>
 </head>
 <body>
+	<!-- TAPA DEL LIBRO -->
+	<div id="cover-screen" style="
+	background-color: black;
+	color: white;
+	font-family: Georgia, serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 999999;
+	">
+	<h1 style="font-size: 2.5em; margin-bottom: 0.5em;">CyberNómade:<br>28 lunas sin códigos</h1>
+	<p style="font-size: 1.2em; margin: 0.5em 0;">✍️ Autores: Alex, Flor, Matu</p>
+	<p style="font-size: 1em; margin: 0.5em 0;">📬 Contacto: contacto@ejemplo.com</p>
+	<p style="font-size: 0.9em; margin: 1em 0 2em;">Un viaje postapocalíptico desde la perspectiva de un robot sin rumbo.</p>
+	<button onclick="startGame()" style="
+		padding: 0.6em 1.2em;
+		font-size: 1em;
+		border: none;
+		background-color: #00bfff;
+		color: black;
+		cursor: pointer;
+		border-radius: 8px;
+	">Ingresar al juego</button>
+	</div>
 	<div id="init-screen">
 		<div id="init-no-js"><noscript>JavaScript must be enabled to play.</noscript></div>
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
