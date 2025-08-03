@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aventuras Robóticas en el Desierto</title>
+    <title>CyberNómade, 28 lunas sin códigos</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
         
@@ -35,6 +35,15 @@
             padding: 20px;
         }
         
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin-right: 450px;
+            margin-left: 50px;
+        }
+        
         .desert-background {
             position: absolute;
             top: 0;
@@ -51,7 +60,7 @@
         .content {
             text-align: center;
             z-index: 2;
-            max-width: 600px;
+            width: 100%;
         }
         
         .title {
@@ -78,6 +87,7 @@
             border: 2px solid #DEB887;
             display: inline-block;
             margin-bottom: 20px;
+            text-align: center;
         }
         
         .subtitle h3 {
@@ -176,10 +186,11 @@
     <div class="game-container">
         <div class="desert-background"></div>
         
-        <div class="content">
+        <div class="content-wrapper">
+            <div class="content">
             <div class="title">
-                <h1>AVENTURAS</h1>
-                <h2>ROBÓTICAS</h2>
+                <h1>CyberNómade</h1>
+                <h2>28 lunas, sin códigos</h2>
             </div>
             
             <div class="subtitle">
@@ -197,18 +208,19 @@
             
             <div class="stats">
                 <div class="stat">
-                    <div class="stat-number">12</div>
+                    <div class="stat-number">25</div>
                     <div class="stat-label">CAPÍTULOS</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">∞</div>
-                    <div class="stat-label">AVENTURAS</div>
+                    <div class="stat-number">13</div>
+                    <div class="stat-label">FINALES</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">1</div>
-                    <div class="stat-label">DESTINO</div>
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">POSIBILIDADES</div>
                 </div>
             </div>
+        </div>
         </div>
         
         <div class="watermark">MIER</div>
