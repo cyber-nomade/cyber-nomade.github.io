@@ -30,9 +30,11 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             padding: 20px;
+            padding-top: 200px;
+            padding-bottom: 100px;
         }
         
         .content-wrapper {
@@ -42,12 +44,15 @@
             max-width: 600px;
             margin-right: 450px;
             margin-left: 50px;
+            margin-top: 0;
+            padding: 40px 20px;
+            background: transparent;
         }
         
         .content-wrapper > *,
         .content > * {
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
         
         .content-wrapper > *:first-child,
@@ -97,20 +102,23 @@
             margin-bottom: 5px;
         }
         
-        .subtitle {
+        .footer {
             background: rgba(222, 184, 135, 0.3);
             padding: 10px 20px;
             border: 2px solid #DEB887;
             display: inline-block;
-            margin-bottom: 20px;
-            text-align: center;
+            position: fixed;
+            bottom: 20px;
+            z-index: 10;
         }
         
-        .subtitle h3 {
-            text-align: center;
+        .footer h5 {
+            /* font-family: 'Arial', sans-serif; */
+            text-align: justify;
             color: white;
-            font-size: 1.2em;
+            font-size: 0.9em;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+            line-height: 2;
         }
         
         .separator {
@@ -126,6 +134,7 @@
             line-height: 1.6;
             margin-bottom: 30px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+            text-align: justify;
         }
         
         .buttons {
@@ -242,23 +251,23 @@
                         <div class="stat-label">POSIBILIDADES</div>
                     </div>
                 </div>
-                <div class="subtitle">
-                    <h5>
-                        Creado por las electricas plumas de 
-                        <a href="/" target="_blank">Alexander Graus</a>, 
-                        <a href="/" target="_blank">Virginia Suhr</a> y 
-                        <a href="/" target="_blank">Sol</a> 
-                        <br>
-                        Bajo los cálidos sensores de <a href="">Fer Catz</a>
-                        <br>
-                        <br>
-                        <a href="/" target="_blank">Más información</a>
-                    </h5>
-                </div>
             </div>
         </div>
         
-        <div class="watermark">MIER</div>
+        <div class="footer">
+            <h5>
+                Creado por las electricas plumas de 
+                <a href="/" target="_blank">Alexander Graus</a>, 
+                <a href="/" target="_blank">Virginia Suhr</a> y 
+                <a href="/" target="_blank">Sol</a> 
+                <br/>
+
+                Bajo los cálidos sensores de <a href="">Fer Catz</a>
+                <br/>
+                <a href="/" target="_blank">Más información</a>
+            </h5>
+        </div>
+        <div class="watermark">Espero que te diviertas. Ningun derecho reservado, mientras cites a los autores.</div>
     </div>
 </body>
 </html> 
