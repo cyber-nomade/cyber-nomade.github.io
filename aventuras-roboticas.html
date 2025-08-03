@@ -44,6 +44,22 @@
             margin-left: 50px;
         }
         
+        .content-wrapper > *,
+        .content > * {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .content-wrapper > *:first-child,
+        .content > *:first-child {
+            margin-top: 0;
+        }
+        
+        .content-wrapper > *:last-child,
+        .content > *:last-child {
+            margin-bottom: 0;
+        }
+        
         .desert-background {
             position: absolute;
             top: 0;
@@ -68,7 +84,7 @@
         }
         
         .title h1 {
-            color: #DEB887;
+            color: #f7e9ac;
             font-size: 2.5em;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             margin-bottom: 5px;
@@ -91,9 +107,17 @@
         }
         
         .subtitle h3 {
+            text-align: center;
             color: white;
             font-size: 1.2em;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        
+        .separator {
+            width: 100%;
+            height: 2px;
+            /* background: #DEB887; */
+            margin-bottom: 20px;
         }
         
         .description {
@@ -188,39 +212,50 @@
         
         <div class="content-wrapper">
             <div class="content">
-            <div class="title">
-                <h1>CyberNómade</h1>
-                <h2>28 lunas, sin códigos</h2>
-            </div>
-            
-            <div class="subtitle">
-                <h3>EN EL DESIERTO</h3>
-            </div>
-            
-            <div class="description">
-                Un viaje épico a través de dunas infinitas donde los robots antiguos guardan secretos que cambiarán el destino de la humanidad.
-            </div>
-            
-            <div class="buttons">
-                <button class="btn">INICIAR AVENTURA</button>
-                <button class="btn">EXPLORAR MUNDO</button>
-            </div>
-            
-            <div class="stats">
-                <div class="stat">
-                    <div class="stat-number">25</div>
-                    <div class="stat-label">CAPÍTULOS</div>
+                <div class="title">
+                    <h1>CyberNómade</h1>
+                    <h2>28 lunas, sin códigos</h2>
                 </div>
-                <div class="stat">
-                    <div class="stat-number">13</div>
-                    <div class="stat-label">FINALES</div>
+                
+                <div class="separator"></div>
+
+                <div class="description">
+                    Un viaje épico a través de dunas infinitas donde los robots antiguos guardan secretos que cambiarán el destino de la humanidad.
                 </div>
-                <div class="stat">
-                    <div class="stat-number">∞</div>
-                    <div class="stat-label">POSIBILIDADES</div>
+                
+                <div class="buttons">
+                    <button class="btn">INICIAR AVENTURA</button>
+                    <button class="btn">DAR FEEDBACK</button>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">CAPÍTULOS</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">13</div>
+                        <div class="stat-label">FINALES</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">POSIBILIDADES</div>
+                    </div>
+                </div>
+                <div class="subtitle">
+                    <h5>
+                        Creado por las electricas plumas de 
+                        <a href="/" target="_blank">Alexander Graus</a>, 
+                        <a href="/" target="_blank">Virginia Suhr</a> y 
+                        <a href="/" target="_blank">Sol</a> 
+                        <br>
+                        Bajo los cálidos sensores de <a href="">Fer Catz</a>
+                        <br>
+                        <br>
+                        <a href="/" target="_blank">Más información</a>
+                    </h5>
                 </div>
             </div>
-        </div>
         </div>
         
         <div class="watermark">MIER</div>
