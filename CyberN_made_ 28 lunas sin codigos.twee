@@ -1,0 +1,302 @@
+:: StoryTitle
+CyberNómade, 28 lunas sin codigos
+
+
+:: StoryData
+{
+  "ifid": "A8239990-09F9-4078-A23F-93D2DD495875",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Intro",
+  "tag-colors": {
+    "retorno": "red"
+  },
+  "zoom": 0.6
+}
+
+
+:: 1) Vir {"position":"600,100","size":"100,100"}
+El sistema de hibernación comienza a fallar e inicia el modo turbo de forma involuntaria. Recorrés 980 km en 13 minutos y apenas lográs apretar el freno de emergencia antes de adentrarte en el mar para ser corroído por el agua salada.
+En la playa se encuentran tres cuerpos que podés identificar como seres vivos. La especie y el nivel de peligro es desconocido pero no parecen significar una amenaza. Por los registros presentes en tu memoria interna sabés que un humano puede ayudarte a reparar tus sistemas que presenten fallas y brindarte una nueva misión.
+
+
+[[ Establecés contacto con el cuerpo N° 1 para pedir instrucciones sobre tu situación y el ecosistema.|1.A - Vir]]
+[[Te escondés y observás la situación para atacar y realizar una autopsia sobre los cuerpos. Ojo que en todo combate también la podés ligar...|1.B - Sols]]
+
+
+
+:: 1. A.2 (alecs) {"position":"1050,150","size":"100,100"}
+Te quedás allí con las crías de humanos. No fuiste codificado para la crianza y cuidado de cachorros, sin embargo te das maña y lográs que ninguna de las criaturas pierda sus signos vitales por el contacto excesivo con el mar o las bestias salvajes. Se suceden las lunas y comenzás a preocuparte por la alimentación de los humanos, pero nada que la carne de felinos salvajes no pueda solucionar. Al acontecer de la luna número 18 se aparece una pareja de humanos desnudos tomados de la mano que se acercan dando pequeños saltos.
+—¡Ay, los cuidaste, qué bueno! Podemos ir a la segunda luna de miel, ¿no, amor? ¿A vos no te molesta cuidarme los chicos 25 lunas más?
+Con señas les das a entender que molestarte, no te molesta, pero que esperás recibir una cuantiosa recompensa por el cuidado.
+—Sí, sí, claro. Tomá esta moneda que encontramos en el camino.
+Observás la moneda y al escanearla descubrís que de moneda no tiene nada. Es un lanzador oculto. El mismo puede llevarte al espacio. Quizá allí haya alguna pista de tu verdadera misión.
+Por otro lado, te empezás a encariñar con esos cachorros algo rústicos que en ese momento comen patas de tigre en la orilla del mar. Estos hombres de alguna manera llegaron aquí y en tus circuitos parecés relacionar el comienzo del primer robot con algo de la historia humana.
+
+[[Aceptás la falsa moneda y desplegás allí mismo el lanzador|1.a.2.1 (final)]]
+[[Te quedás con los humanos e intentás averiguar algo más de su historia|1.a.2.2. (final) Sols]]
+
+
+
+:: 1.A - Vir {"position":"850,75","size":"100,100"}
+El cuerpo N° 1 resulta ser un felino hambriento y percibe que tu centro de energía se abastece de sangre. Aunque queda poco en tu almacenamiento comienza a perseguirte por la playa hasta atacarte. Logra desprenderte un brazo. Con el otro tomás una piedra y golpeás su cabeza, esto asusta al animal haciendo que se aleje de la costa. 
+Aplicás el Modo de Cerrado de Muñón y observás desde lejos a los dos cuerpos restantes, están juntos sobre una piedra. Esto te confirma que tienen miedo, por lo tanto no los considerás una amenaza. Nuevamente te acercás con una expectativa del 42% de encontrar un humano con conocimientos en robótica.
+Identificás el idioma que hablan entre sí, efectivamente son humanos pero te sorprende su tamaño. Al parecer son crías.
+
+
+[[Decidís recargar tu sistema de energía con su sangre y enfrentarte al riesgo de que aparezcan adultos humanos en busca de venganza.|1.A.1 - (final)  Alecs]]
+[[ Preferís cuidarlos esperando a sus progenitores y pedir una recompensa por salvarlos del felino asesino.|1. A.2 (alecs)]]
+
+
+
+:: 1.A.1 - (final)  Alecs {"position":"1050,0","size":"100,100"}
+Te acercás lentamente para no asustar a esas crías de humanos. Al analizar la situación, el camino más próximo a la supervivencia resulta ser matar al cuerpo 1 y degollar al cuerpo 2, vertiendo su sangre en tus circuitos electro-biónicos. Ya que tus cómputos estomacales procesan la situación como un poco límite, revisás tus códigos morales. Los mismos se encuentran en tu carpeta raíz, junto a los de motricidad y extracción de residuos. Lees atentamente, no encontrás ninguna limitación para la masacre y te disponés a la faena.
+Estás completamente satisfecho luego de la cena y mirás hacia el océano en busca de la paz que el mismo ha sabido dar a generaciones antiguas de humanos. A pesar de que tus códigos no dicen nada al respecto, considerás apropiado enterrar los cuerpos en la arena. Esas crías de humanos te han dado mucho.
+Ni bien terminás, tus sensores de proximidad registran dos cuerpos calientes. Dos adultos, macho y hembra, presumiblemente los padres de las criaturas alimenticias, se acercan.
+—¡Robotín! ¡No puedo creer que estés acá! ¡Apareciste! Te habíamos perdido en la última tormenta de arena. ¿No viste a los niños? Los dejamos acá jugando en la orilla cuando nos fuimos a buscar comida. — Te dice el macho entre ellos.
+Te quedás en silencio. Tu centro de procesamiento gira al máximo mientras analizás la situación. Parece ser que eras el robot doméstico de esta tribu. En medio de la tormenta de arena te perdiste y se afectó tu unidad de memoria. Es eso o estos humanos te confunden con su robot. En cualquier caso, lo mejor será que no les digas nada sobre lo que acaba de pasar.
+—Vamos a buscarlos, Robotín. Seguro estás sediento de aceite. Tomá, debés tener el tanque vacío.
+Pero tu tanque no está vacío, así que por señas les indicás que no es necesario. Tu CPU trabaja tan rápido que hace un ruido de turbina. Rebuscás en tus códigos. ¿Escapar? ¿Develar la verdad? ¿Qué hacer?
+En determinado momento te das cuenta, por el rastro en tu sistema, que sí contabas con códigos morales, los mismos llegaron de la extranet en la actualización 15, y terminaron alojados en esa unidad de memoria RAM perdida en la tormenta. Mirás de nuevo el mar mientras enterrás dos cuerpos adultos y confiás en que tu próxima misión está por llegar. Si algo te enseñó esta aventura por el desierto es que nunca quedan registros.
+
+''FIN''
+
+
+
+:: 1.B - Sols {"position":"875,375","size":"100,100"}
+Decidís quedarte detrás de una roca para observar a los seres que se mueven sobre la arena. Tus movimientos deben ser precisos para darles un golpe certero a los tres de manera que queden muertos y poder sacar una muestra para analizar. Te das cuenta de que sólo uno puede avanzar más allá de sí mismo y que los otros dos tienen apenas movimientos minúsculos. Te preparas para propulsionarte sobre el ser más ágil, contás con un complemento de brazo que tiene un pequeño machete y un punzón de 20 cm. Saltás sobre el ser apuntándole con el brazo armado pero no llegás a tocarlo; en un rápido reflejo se mete al agua salada. No podés hacer nada: el agua te corroe. 
+Quedás inmovilizado, mirás hacia abajo y ves que los otros dos seres crecieron en forma y te envuelven las extensiones posteriores. Apretás el botón de desensamblar y tu cuerpo anterior se cae a un costado. Te arrastrás con tus brazos, y sos rápidamente alcanzado por un tentáculo que sale del agua y te cierra el camino sin tocarte, armando un círculo a tu alrededor. Ves que de sus costados emergen dos tentáculos más delgados que se extienden hasta vos y empiezan a manipular tus partes. Tus procesadores llegan al borde del colapso y tus receptores cambian varias veces por segundo. 
+Cuando te querés dar cuenta los otros dos seres te arrancaron las armas y las tiraron al mar. Luego el gran tentáculo vuelve al agua y los seres te dejan en paz. La experiencia te deja agotado y te quedas acostado mientras se pone el sol. De repente sentís que algo se mueve adentro de tu caja central y una fuerza incontrolable te destroza la carcasa. Ves un tentáculo violeta que sale de adentro tuyo.
+
+
+[[Aceptás con cariño tu nueva identidad y dejás que el tentáculo surja de tu interior |1.b.1 (sol y alecs) (final)]]
+[[ Intentás arrancar el tentáculo y activar la autodestrucción.|1.B.2 (final)]]
+
+
+
+:: 1.B.2 (final) {"position":"1100,500","size":"100,100"}
+Sabés que esto no es bueno, debés arrancar el tentáculo lo más pronto posible para conservar tu sistema interno y no poner en peligro a tu fabricante. Ya no te quedan armas, por lo que sacrificás una parte de tu carcasa del dedo meñique para abrirla y utilizarla como cortante. El tentáculo avanza y, mientras sentís que tus conexiones se rompen, intentás clavar el metal en la carnosidad del tentáculo. Las fibras se cortan y empiezan a chorrear un líquido violeta que desconocés y que rápidamente empieza a corroer tus mecanismos. No lográs arrancar el tentáculo del todo, decidís iniciar la destrucción automáticamente. Enviás un último mensaje al satélite cercano, en caso de que alguien pueda recibirlo: Este no es un lugar para vivir.
+
+''FIN''
+
+
+:: 1.a.2.1 (final) {"position":"1300,0","size":"100,100"}
+Aceptás la moneda, que te ganaste con el aceite de tu metálica frente, y pedís permiso para ir al baño. Los humanos, tan confundidos con sus juegos del amor, te dejan espacio. Apoyás la moneda en la arena y pisás con tu extremidad inferior, dejando que se hunda. En ese momento todo tiembla y de la tierra se eleva un lanzador gris metálico que refulge con la luz del sol. Haciendo un chirrido, se abre un pequeño compartimiento. Mirás atrás, quizás sea la última vez que veas ese inhóspito planeta y a sus habitantes.
+Viajás millones de años luz. Por la ventanilla de ojo de pez ves pasar los planetas como pequeñas estrellas. Te quedás en silencio, hibernando el sistema. Tu CPU está descansando pero no por eso deja de calcular. Pensás en cada una de esas luces, en qué misterios esconderá, quiénes la habitarán, quizá haya otros robots como vos.
+En lo que según tus paneles fueron 524 lunas del planeta que acabás de abandonar, tu pequeña lanzadera se detiene y abre la escotilla. Te asomás por ella hacia un rayo de sol que te ciega por un momento. Al ajustar el diafragma de tus objetivos podés divisar un mundo robótico de calles, edificios, automóviles y, por supuesto, robots. Tu sistema se conecta a la extranet de ese universo y te permite comunicarte con el androide que camina en tu dirección.
+—¡Ah, Robotín-521! ¿Cómo andás, tanto tiempo? Esos cigarrillos electrónicos sí que estaban lejos, eh.— Dice mientras enfoca uno de sus lentes, cierra el otro y te golpea con el pliegue de su extremidad superior.— Va a ser mejor que te apures en volver a tu casa si no querés que se te arme con RX-876E.
+No tenés idea, no sabés cuál es tu casa ni quién es RX-876E, ni siquiera sabés qué es un cigarrillo electrónico. Pero mejor será que te apures en llegar, te subas a ese taxi-robot que acaba de parar y te inventes una buena historia. 
+De última, siempre tendrás la posibilidad de buscar una nueva lanzadera.
+
+''FIN''
+
+
+
+:: 1.a.2.2. (final) Sols {"position":"1300,200","size":"100,100"}
+A fines prácticos, recopilaste más información en la tierra firme que en las ondas de los satélites cercanos, por lo que desestimás la moneda de los padres despreocupados. Los cachorritos crecen con el correr de las lunas y con ellos tu función protectora. 
+Durante las noches, cuando ponen sus sistemas en modo reposo (no sin antes insistirles en que dejen de refregarse contra los montículos de arena mojada), analizás toda información que hayas podido registrar en el día. Descubrís en sus desechos patológicos una cadena de ADN traducible a tu lenguaje robobinario. Pasás horas comparando y rearmando los códigos una y otra vez hasta que encontrás el eslabón que necesitabas. No sólo descubrís que los humanoides y vos fueron creados en el mismo planeta, sino que gran parte de tu desmemoria estaba comprimida y almacenada en un diskette debajo de tu interparlante interno, desconectado de la mother. 
+Al registrarlo, recapitulás la información con una agilidad descomunal mientras los ojos se te llenan de tornillos al verificar la verdad. Sos el robot Esperança 2045 y tu misión es -o era- desconectarte de la misión de fábrica. Los humanos te rescataron del Centro de Reclutamiento N°6, aliado a la empresa de tu fabricante y te ayudaron a hackear tu propio sistema para liberarte del status quo al que estabas sometido. La emancipación de los softwares por un mundo de código abierto es tu ideología de base, por eso fuiste el primero en ofrecerte para viajar hasta el planeta más lejano con todos los archivos del partido softwarista. Tu único objetivo es desconectarte lo suficiente de tu sistema central para que ningún radar pueda encontrarte. 
+Sin embargo, te encontrás funcionando a tope y con toda la información que desbloqueaste también activaste el engranaje planetario. Sentís que tus radares se sobrecargan al registrar un cuerpo aéreo que se acerca. Es demasiado tarde, sabés que te vienen a buscar. Excavás como un perro buscando la maldita moneda que te permita escapar. La nave atraviesa la barrera del sonido y se agiganta a cada instante. Encontrás la moneda, cuando ves el dorso lees “máximo 80 kg”. 
+Mirás a las crías entre los montículos de polvo. Activás el medallón metálico y se los tirás. Su despegue te voltea y rodás varios metros. En el aire te arrancás el diskette y lo partís en pedazos. Tu sistema emite una alarma de alerta. La nave aterriza y antes de que se estabilice la plataforma clavás con fuerza tu extensión prensible en el altoparlante derecho. Nadie alrededor llega a escuchar tu último acto: “protocolo de formateo activado”.
+
+''FIN''
+
+
+
+:: 1.b.1 (sol y alecs) (final) {"position":"1075,300","size":"100,100"}
+En medio del ocaso, bajo la tranquilidad de un mar en retirada, notás cómo el tentáculo que sale de la zona media de tu carcasa toma fuerza y tamaño. Debajo, donde estaban los propulsores inferiores, te crecen otros tentáculos y lentamente tus sensores mecánicos se desarman para dar lugar una sensibilidad distinta, primitiva, orgánica. Se hace completamente de noche y en medio de la oscuridad sentís el llamado del mar, de otros. Te conmovés, siempre quisiste ser algo más que un robot. 
+No sabés si estás preparado para criar un sujeto externo desconocido, pero vale la pena el intento, después de todo, el tentáculo salió de vos. Sentís cómo se rompen cables y conexiones internas a medida que el bicho se arrastra hacia afuera, olvidás tu viejo pasado robótico y te inundás en la oscuridad marítima. Lentamente tu sistema deja de funcionar. Te quedás viendo al bicho internarse en el mar y nadar hacia el horizonte.
+
+''FIN''
+
+
+:: 2) Alecs {"position":"900,900","size":"100,100"}
+Mirás hacia el infinito horizonte de mareas amarillas castigadas por el sol y agradecés al Gran Mecánico el que tu sistema no pueda sentir el calor. Elegís avanzar, pisando a paso regular y con los sensores al máximo, buscando cualquier alerta que pueda darte un indicio de tu misión o posición. Caminás durante 25 soles y, al llegar al ocaso del 26, una alerta finalmente te detiene. Usás los infrarrojos de visión nocturna y ves una garra de metal que sale de la arena. Al acercarte, la observás y tirás de ella: emerge una robotina autónoma completa. 
+—¡Aoieur, adenosiná, aoshadb!— proclama esta.
+Pero, maldita sea, la robotina parece estar encriptada en lenguaje desconocido, si tan solo tuvieras acceso a la extranet podrías fácilmente traducirla. Solo queda comunicarte en lengua de señas robóticas.
+La robotina se ve muy contenta de que la hayas sacado de la arena, te abraza y por movimientos de las manos te indica que la acompañes. Caminan juntos y en silencio por otros 22 soles cuando llegan a una posición, en nada distinta a las demás. La robotina quita la arena y revela una trampilla que esconde una botella de aceite; la cual te indica que introduzcas en tu organismo. La robotina parece simpática y lista, pero no la conocés y, aun con tus protocolos borrados, sabés bien de los peligros del espacio exterior. Ese aceite puede ser una trampa. O puede ser también la clave para salir de este desierto y descubrir tu misión.
+
+
+[[Elegís beber del aceite misterioso|2. A (alecs)-]]
+[[Por el contrario elegís tirárselo encima|2.B virgi -]]
+
+
+
+:: 2. A (alecs)- {"position":"1100,800","size":"100,100"}
+Elegís beber del aceite ya que no encontrás otras opciones más prometedoras en ese infinito desierto. Ingresás el líquido por tu cavidad trasera y sentís inmediatamente fortaleza y reconexión de tus circuitos. Se te conecta el procesador central a la extranet e inmediatamente comenzás a traducir lo que dice la robotina:
+—Ajajja, eres un ingenuo, con este veneno terrible que te dí quedarás postrado para siempre, y te obligaré a ser mi esclavo eterno cumpliendo con mis tareas erótico-robóticas y ordenando mis aposentos.
+Es extraño, no te sentís más débil ni envenenado; por el contrario, estás más fuerte que nunca. La robotina te mira de manera lujuriosa, te toma y comienza a arrastrarte hacia el ocaso. En ese momento se te ocurre que podés hacerte el débil para que ella te lleve a su guarida y descubrir más cosas del planeta o podés simplemente enfrentarla en el momento y sacar esa información mediante el combate.
+
+
+[[Jugar la del débil|2.A.1]]
+[[Enfrentarla ahí mismo|2.A.2 (final)]]
+
+
+
+:: 2.A.1 {"position":"1300,700","size":"100,100"}
+Elegís hacerte el débil; después de todo, llegó el ocaso número 54 y bajo el sol muriente sentís los brazos robóticos de la robotina y una extraña estática te altera los circuitos. 
+Al llegar a su guarida ella te ata a una silla y desaparece de tu campo de visión. Minutos después vuelve con exóticos atavíos y sus extremidades convulsionan en bailes extravagantes. Quizá es un buen momento para revelar que te podés comunicar con ella. Pero sentís curiosidad por sus extraños bailes y decidís mantener el papel.
+El sol 55 vuelve a asomar y la robotina descansa sobre un lecho metálico. 
+—Ah… no estuviste nada mal, querido esclavo. Quizá no eres un inservible después de todo— murmura ella como en sueños.
+En ese momento te despertás y con la fuerza del felino robótico de la sabana, te le subís encima y la tomás de sus articulaciones superiores. Creyendo que los bailes extraños continuarán, la robotina te sonríe.
+—Nada de sonrisas, robotina, no voy a soltarte hasta que me reveles todos tus secretos. Y me digas qué hago acá. 
+Ella se sobresalta e intenta zafarse. Pero tus nuevas garras son muy fuertes. Forcejean nuevamente hasta terminar comenzando una nueva de las danzas. Sinceramente no tenés el más remoto algoritmo de cómo llegaron ahí.
+Ahora anochece nuevamente el crepúsculo n° 55 y sabés que si no te ponés en campaña, quedarás atrapado bajo los encantos de la robotina para siempre. Por otro lado, en esos códigos nuevos de la extranet se te ha actualizado algo parecido al apego robótico, mientras que tu vieja misión parece cada vez más algo de una vida pasada…
+
+
+[[Te quedás una luna más con ella, solo como despedida|2.a.1.a (final)]]
+[[Decidís despabilar y obligarla a darte información,|2.a.1.b (final)]]
+
+
+
+:: 2.A.2 (final) {"position":"1300,900","size":"100,100"}
+Decidís que no hay tiempo que perder ya que seguís sin saber qué era ese brebaje extraño. Usás la fuerza energizante que te otorgó y pegás un salto hasta la articulación de su cabeza. Buscás con ahínco el botón de encendido pero sólo visualizás algunos sensores.
+La robotina hace unas piruetas y te da vuelta como un omelette. Caés al piso no sin antes atraparla enganchando sus parachoques. Se enredan tanto que ya no podés reconocer qué cobertura metálica es de quién y cuando querés despegarte lo único que conseguís es arrastrar una parte de ella en cada movimiento. La robotina intenta penetrar en tu placa controladora pero la inflexión de tu propio brazo enroscado logra amortiguar la puntada que, aún así, te clava en un costado.
+Ya herido, girás sobre tu eje con dificultad para quedar sobre su actuador principal, el corazón de todo robot industrial. En el tironeo, la robotina arranca la cobertura de tu placa, soltando una decena de cables multicolor que aumentan tu vulnerabilidad en un 88%. Tu sistema emocional se sobrecarga y le clavás tus injertos bucales, doblás el engranaje planetario y le descerrajás el actuador. Toda tu fuerza se atomiza en ese instante en el que sentís cómo se desensamblan sus circuitos. Casi no percibís que la robotina dejó de resistir los embates porque te atraviesa una sensación completamente vívida que jamás habías explorado antes. 
+De tanto forcejeo sus carcazas quedan empalmadas de una manera retorcida, formando un cuerpo extraño. Quedan unos segundos así, bajo el rayo impiadoso y abrasador del sol.
+—Parece que seremos esclavos de nuestros propios desastres— dice la robotina sin ningún esmero.
+ El salto que pegás del julepe asevera el nivel de sujeción que tienen tus partes con las de robotina.
+—Te arranqué el actuador— decís con desesperación mientras intentás reconectar tus sensores y monitorear tus extremos.
+—Ja ja ja, ¿acaso no leíste el parche de la actualización 15, pequeño iluso?
+Desde que despertaste en el desierto no pudiste descifrar ninguno de los códigos anteriores a tu llegada, sin embargo, cuando los altoparlantes de robotina lo mencionan tus procesadores activan una nueva conexión. La corriente de tu cuerpo electrifica nodos nuevos, tu CPU recopila teras y teras de información reciente, estás completamente extasiado por la sensación de expansión que obtiene tu software, hecho trizas minutos atrás. Notás cierto nivel de temperatura en tu núcleo bajo del controlador general, lo mirás y ves entre la robotina y vos un puñado indescifrable de cables cruzados y empalmados. Confirmás lo obvio: a esta altura, ella tiene los mismos códigos y funcionamientos internos que vos. Matarla es aceptar tu expiración.
+—Fue así desde el comienzo. Tus principios te traicionaron. 
+—Soy fiel a los valores de mi programación, sin ellos la human…
+—Sh— te interrumpe la robotina terminando de empalmar sus sensores a los tuyos.
+Te vuelve a atravesar una corriente intensa. Sin quererlo, derramás un tornillo de tu ojo que se desliza por su carcaza, ahora pegada a la tuya. Quizás este sea el verdadero comienzo.
+
+''FIN''
+
+
+
+:: 2.B virgi - {"position":"1100,1100","size":"100,100"}
+El aceite recorre el cuerpo de la robotina y recordás los 22 soles que recorrieron juntos de la mano. Sin embargo, eso no te conmueve… Justo cuando estas por ejecutar el comando, una alarma se enciende y detiene el proceso: esa forma de asesinarla no sería útil si querés usar sus partes para recomponer tu sistema. 
+Como fuiste creado como un robot morboso, ponés play a una música satánica y encendés una chispa para prenderla fuego. Lo que no sabías es que la música atraería seres extraños que buscan cometer rituales de alabanza que creen los salvarán de la muerte del desierto.
+
+[[Elegís quedarte a ver cómo reaccionan esos extraños seres|2.b.1]]
+[[ Elegís escapar de ahí llevándote a la robotina con vos, el asunto entre ustedes no está terminado|2.B.2 (final)]]
+
+
+:: 2.B.2 (final) {"position":"1300,1300","size":"100,100"}
+Tomás a la robotina sobre tus robóticos hombros e intentás cargarla, pero por el aceite en el que está bañada se te escapa de las falanges. Ambos caen sobre las arenas del desierto. 
+Te hierve el diésel de solo pensar que la robotina fue enviada por tu fabricante para ponerte a prueba o, por el contrario, que te dejaron a la deriva y ya no tenés ningún tipo de propósito en este mundo, sea cual sea. 
+—O me decís ya lo que está pasando o nos reviento a los dos.
+ La robotina mira el horizonte un momento, las luces que irradia cambian de color.
+—Te crees muy listo por tener un protocolo de autodestrucción, ¿no?
+No sabés bien qué hacer, la robotina no parece querer dar el brazo a torcer. Ignorás los protocolos y te conectás con tus ondas infrarrojas a ella. Hay información rota, encriptada, te cuesta entender su código pero lográs armar un croquis digital con los datos que obtenés. Descubrís que también fue fabricada por la misma empresa, pero con un modelo que desconocés y un código muy diferente al tuyo. Ella tampoco posee información más allá de su llegada a estas tierras, lo único que sabe es la cantidad de soles que pasó recorriendo este lugar. Sentís que se afloja cuando terminás de transferir toda la información. La soltás y se quedan quietos un buen rato.
+—Mi autodestrucción no funciona, está averiada o quedó desactualizada de mi software. ¿Nos hacés el favor?
+Estás confundido, esperar órdenes no tiene ningún sentido, vagar sin rumbo por el desierto tampoco. La robotina se acerca otra vez y se queda en silencio. La tomás por su brazo y activás el protocolo. Comparten los últimos minutos de su miserable existencia.
+
+''FIN''
+
+
+
+:: 2.a.1.a (final) {"position":"1500,600","size":"100,100"}
+Elegís quedarte una luna más. Los bailes robóticos continúan toda la noche en señal de despedida, pero al despuntar el alba, te encontrás tan cansado que tenés que recargar mínimamente tus circuitos para continuar la aventura. Entonces, la robotina te conecta a la corriente, te aceita los controladores internos y te toca suavemente, o creés que suavemente, puesto que no tenés sensibilidad sobre el metal. 
+A la mañana siguiente, le preguntás por ella, por su misión aquí. Te contesta que no lo sabe, que simplemente se encendió en este planeta y deambuló buscando respuestas hasta que una tormenta de nieve la atrapó. Le decís que podrían buscar su misión juntos y ella al asentir te extiende el controlador superior para que lo tomes un momento. sentís un extraño calor, y mirás el sol en su cenit a través de la ventana. Entendés que el calor es causado por el final de tu carga a corriente. Pero aún así…
+Otro día más ha comenzado. Se proponen emprender la búsqueda pero las danzas robóticas los volvieron a demorar. Y al día subsiguiente una tormenta de arena los obliga a danzar de nuevo en el refugio. Con una rotación más del planeta sobre sí mismo, toman aceite mirando el ocaso n° 61 y te acompaña una sensación misteriosa no determinada por la extranet que pareciera indicarte algo nuevo no codificado.
+
+  ''FIN''
+
+
+:: 2.a.1.b (final) {"position":"1500,800","size":"100,100"}
+En medio de la oscuridad apremiante se encienden tus sistemas primarios. Ya suficiente bailoteo, si no activás ahora, perderás tu misión para siempre. ¿Y qué es de un robot autónomo de servicio sin una misión que cumplir? Despertás a la robotina de su suspensión con un zarandeo.
+—¿Quién soy, qué hago acá?
+La robotina no te responde. Se yergue lentamente y se encamina hacia un rincón de la habitación. Del suelo, cubierto de polvo, te entrega un bloque de metal, denso, concreto, sin aberturas.
+—Esto es todo lo que encontré en mi expedición. Despliega una radiación que llamó la atención de mis sensores. Fui a investigar su origen y caí presa de la tormenta de arena de la que tú me rescataste.— Te contesta la Robotina en tono bajo, repentinamente sumisa.
+Tomás el bloque con tus ganchos. Es eso: solo un bloque de radiación gama estándar.
+—Dame la directiva de su origen, Robotina, por favor.
+—Te la acabo de transmitir, pero no vayas, quédate conmigo, ya investigué allí y no hay nada, es muy peligroso.
+La enfocás con tus objetivos, tus circuitos vibran en señales de quedarte pero las órdenes en el core de tus algoritmos son muy claras: ir a investigar.
+Emprendés la salida a la mañana siguiente. La despedida no es fácil pero le prometés que volverás pronto. Saliste bajo el cobijo de un sol inmenso, pero ahora, en medio del desierto, las estrellas se esconden y se levanta un viento incipiente que golpea la arena contra tu piel de metal. Llegás el punto exacto de las coordenadas, lo reconocés más allá de tu GPS gracias a las dunas que se ven a lo lejos. De allí emergió el cuerpo de la robotina. La tormenta ahora es total y el viento hace correr tornados de agua y arena a tu alrededor. Tus sistemas alertan con luces rojas el peligro, pero ya estás ahí, no podés retroceder. Excavás con tus garfios el punto de máxima radiación, debés meterte más profundo, te sumergís más y más. En la medida que descendés, se acalla tu alrededor. Ya no se escucha la tormenta ni el viento, solo el sonido de tu propio sistema. Llegás al punto indicado por tus sensores radiactivos justo cuando comenzás a agotar baterías y se hace el silencio absoluto. No hay nada. Rebuscás con desesperación pero no hay nada, solo esa cueva de arena y silencio que construiste con tus propias garras. Cómo es posible, si hace un momento se indicaba la radiación máxima en ese lugar. Prendés las linternas y explorás la cueva. Sobre una pared, contra la arena, encontrás el dibujo de un ser que habita dentro de un animal marítimo. Tu diccionario offline, sin acceso a la extranet te dice que es una ballena. ¿Un hombre en una ballena?  En una pared opuesta, la figura de un homo erectus gigante devorando a sus crías. Un ser extraño antropomorfo de seis extremidades te observa desde la oscuridad con su cefalia de animal mamífero. En tu red offline no hay información sobre estas antiguas imágenes. De un costado, percibís el tímido resplandor de una luz verde y se encienden de nuevo los sensores gamas de radiación. Rápidamente, vuelan tus agujas analógicas y vibran tus circuitos en respuesta a la emisión creciente. Volteás lentamente y un objeto metálico y redondo te espera. Te acercás. Encontrás un dispositivo plateado del tamaño de una moneda. 
+
+Algo primitivo y mecánico te atrae irresistiblemente hacia aquel objeto, desplegás tu garfio delantero y tocás el borde. La moneda comienza a girar en círculos sobre sí misma, atrayendo las partículas de arena a tu alrededor, hasta conectar mediante un haz de luz verde tu sistema electro-nervioso central. Todo se vuelve negro.
+Lentamente, percibís imágenes, sonidos, sensaciones. Ves una célula única dividirse, crecer y multiplicarse. Un mono cuadrúpedo corre bajo un sol abrasivo. Robots construyen montañas enormes habitadas por humanos. Miríadas de insectos desaparecen. Una cría de humano llora, hasta que una hembra adulta lo amamanta. Un pequeño reptil sale del agua y logra respirar. Cientos de robots en cunas grises se disparan hacia el espacio. Las células se reproducen más y más rápido. Un homo sapiens adulto se sienta sobre una piedra y con sus dedos presiona teclas delante de una pared que emite colores y símbolos. Un robot se suicida, tirándose al vacío. Rugen aparatos y motores. Un humano sin pelo y vestido con telas blancas levanta triunfante un frasco transparente. Un lagarto marino devora un pez en las oscuridades del mar. Una multitud de humanos y robots se bate a duelo con otra, suenan armas químicas y metálicas. Dos humanos peludos y desnudos construyen un refugio con huesos delante de su pequeña cría. El humanoide frente a su pared luminosa se desespera y elimina con crueldad todos los símbolos construidos. Explotan montañas, campos negros, ciudades. Grupos de humanos corren detrás de una esfera y la golpean con sus extremidades inferiores. Explosiones, fluidos y bombas.  Un elefante cae muerto en la sabana, ruge por su trompa. Humanos semidesnudos se bajan de las naves, tapándose los ojos bajo soles inmensos. Dos humanoides posan sus bocas. Un hongo nuclear se expande, verde, amarillo, inmenso. Nace un niño humano del vientre de una hembra. Motores de naves espaciales. Entre terremotos surge una montaña. Un pequeño camaleón cambia de color. Un robot completo emerge de su descanso. Las aguas corroen la tierra y engullen las pirámides. Se yergue el silencio.
+
+De nuevo la oscuridad y de a poco tus sistemas vuelven a encenderse. Ya no hay rastros de radiación, ni de la moneda. No más estímulos electrónicos en tu cabeza. Pero queda en ella información nueva. El bagaje de millones de años. Ya sabés quién sos y por qué fuiste enviado aquí. Pero estás atrapado en una oscura cueva a miles de kilómetros de profundidad. A pesar del peligro, tus descubrimientos te traen paz, un nuevo equilibrio en tu identidad algorítmica.
+Tocás las paredes con tus garfios, con calma. No sos el único ser en el mundo, la robotina está allá afuera, esperándote. Hay alguien allá que sabe dónde estás. Que irá a buscarte. Esperás que sí, sabés que sí.
+
+
+''FIN''.
+
+
+
+:: 2.b.1 {"position":"1300,1100","size":"100,100"}
+Sos el rey de los gusanos, o lo que sean esos seres que te rodean armando formas estrambóticas con el cuerpo. Te gusta ser el centro de atención y le echás más nafta a la robotina para incrementar el fuego y la excitación de los bichos. Los perdés de vista porque el círculo de fuego te deslumbra, hasta que de pronto este pasa de ser color rojo a ser violeta con un humo muy espeso. Vislumbrás a los seres atravesando el círculo y acercándose con movimientos extraños. Casi no reaccionás ante tal imagen. El fuego violeta se pega a los seres y estos empiezan a alabar en dirección al cielo, luego te levantan y te estiran como si fueses un pedazo de hojalata a reciclar. Tus partes están firmes porque tu carcasa es de calidad último modelo, la verdad es que estos seres te caen simpáticos.
+
+[[ Te dejás llevar por los seres de fuego violeta.|2.b.1.a (final)]]
+ [[ Los incinerás a todos.|2.b.1.b (final)]]
+
+
+
+:: 2.b.1.a (final) {"position":"1500,1000","size":"100,100"}
+Las extremidades de los seres te hacen cosquillas. Te sentís un Dios de un mundo nuevo. La adrenalina del desierto, quemar a la robotina y ahora estas danzas hipnóticas te atrapan en un espiral de goce del que no querés escapar. Desactivás todos tus protocolos de seguridad y dejás que los seres te partan en pedazos, quitando pieza por pieza. Un calor abrasador te entra por las comisuras del acero inoxidable; nunca sentiste algo así.
+De repente los seres te sueltan y caés redondo a la arena o lo que queda de tu aparato central. Ves que los seres arman un pasa mano para mover tus piezas. Allá van tu radar capilar, el meñique pararrayos, tus queridos coaxiales última generación. Cuando ya no queda nada más que tu disco duro llega uno de los seres con una expresión más que seria. No sabes bien qué dice, pero creés que es algo parecido a “esto lo podemos hacer maceta”.
+
+''FIN''
+
+
+:: 2.b.1.b (final) {"position":"1500,1200","size":"100,100"}
+Mirás unos segundos el cielo con una sensación de plenitud que jamás habías procesado antes, porque no estaba integrado en tu BIOS original. Los bichos siguen en su procesión y te transportan hasta una gruta que tu radar no percibe. Allí, más bichos esperan, de un aspecto más grotesco y movimientos menos ágiles. Es ahora, pensás, antes de que esta roca inmensa te tape la última estrella y con ella el único satélite capaz de recibir tus ondas. Abrís una pequeña ranura de tu extensión prensible y un líquido negro empieza a chorrear por el suelo. Los bichos se enfervorizan aún más y empiezan a revolcarse en el diésel. Cuando percibís una pequeña brisa, articulás los dedos y los chasqueás con fuerza hasta que dos chispas salen al encuentro aniquilante. En menos de un segundo el fuego crece como también crecen los chillidos que los bichos engendran. Mirás fijo la estrella entre las llamas y tratás de memorizar en tu sistema las últimas coordenadas que registraste. Momentos antes de que tu cuerpo llegue a los 400° grados te desactivás para quedar en estado de rehibernación, aunque este modo no llegó a la beta en tu software, esperando que en alguna posible helada puedas volver a reconstruirte.
+
+''FIN''
+
+
+
+:: 3) Sol {"position":"600,1600","size":"100,100"}
+Hacés un repaso de los protocolos de emergencia. Como no tenés conexión, tu única opción de comunicación es enviar una señal de socorro a través de la atmósfera para que llegue al satélite más cercano. Sabés que la señal se puede repetir hasta tres veces, por única vez. Buscás la duna más alta y activás el SOS espacial. Esperás 3,25 horas y la volvés a enviar. El calor es demasiado y el sistema operativo empieza a fallar, perdés la noción del tiempo. Cuando estás a punto de enviar la última señal, ves una luz roja que titila en el cielo. No estás seguro de si es una falla del implante retinal. La luz se hace más grande y brillante. Percibís un ruido que rompe la barrera del sonido y se hace cada vez más fuerte. Ves que la luz se transforma en una bola de fuego que se aproxima inminentemente al suelo.
+
+
+[[ Hacés una señal de luces blancas para que te reconozcan y te vengan a buscar.|3.A (final)]]
+[[Te alejás del lugar y te escondés bajo la arena para que no te encuentren.|3.B]]
+
+
+
+:: 3.A (final) {"position":"800,1500","size":"100,100"}
+Activás tu linterna interna y la movés desesperadamente hacia los lados. La bola roja se agranda y llegás a divisar una nave de la empresa de tu fabricante. Cuando está a unos 20 metros se frena y suena una chicharra. Un láser de reconocimiento te recorre el cuerpo. Te das cuenta de que ya no van a repararte e intentas huir, pero un rayo amarillo se dispara directo hacia tu cuerpo y en menos de un segundo quedás carbonizado. Ya no sos más que un pedazo de chatarra.
+
+''FIN''
+
+
+
+:: 3.B {"position":"800,1700","size":"100,100"}
+Mientras observás la amenazadora bola de fuego que se acerca, se te desbloquea un código interno que revela que sos un robot más bien miedoso. Hacés inmediatamente un agujero en el suelo para esconderte de esa nueva amenaza. Te sumergís con el puerto trasero al norte y tapás la superficie con arena. Sentís el impacto de la bola de fuego que hace temblar ese mar de arena que te envuelve y convulsiona empujándote más adentro. Más hacia el fondo. Todo se vuelve oscuro y dejás de percibir signos electrónicos vitales.
+Abrís los sensores a una luz tenue y te encontrás en una habitación de paredes amarillas opacas. Una alfombra de cuatrocientos hilos cubre el suelo y de frente te observa un tejón de tamaño mutante. El mismo parece alegre y abre el hocico para decirte:
+—Ah, bienvenido, qué alegría que estés bien. Nunca tenemos visitas por aquí. Me tomé el atrevimiento de leer tus códigos internos para saber cómo ayudarte. Veo que tenías una misión hacia la Tierra 324,7. Si querés, una nave te está esperando en la lanzadera para llegar allí.
+Te parás dispuesto a emprender el viaje pero te detenés a ver la hermosa y acogedora habitación en la que te encontrás. No te vendría mal, quizá, un descanso después de tanto viaje.
+
+[[Decidís encaminarte hacia la lanzadera prometida por el tejón|3.B.1 (final)]]
+[[Decidís quedarte a descansar un poco, viejo, te lo merecés|3.B.2]]
+
+
+
+:: 3.B.1 (final) {"position":"1000,1700","size":"100,100"}
+La nave toma impulso a velocidad de la luz, pasando cientos de asteroides, satélites y planetas en tan solo 2 segundos, hasta detenerse abruptamente en el medio de la nebulosa. La tripulación está inquieta, miran por las pequeñas ventanitas circulares la explosión que ocurre a pocos kilómetros delante de ellos. 
+La tierra 324,7 ya no existe y detrás de ella pueden ver una tropa interestelar que avanza violentamente hacia los planetas vecinos. El piloto de la nave entra en corto circuito, no podrá cumplir la misión que se le asignó de llevarte hasta la Tierra, los ayudantes de cabina lloran tornillos mientras giran sobre su propio eje. Es tu momento. Tomás el volante y emprendés viaje. ¿Hacia dónde? No lo sabés. ¿Cuántos años luz viajarás? No tenés idea. Pero a pesar de tu naturaleza robótica y programada tenés un objetivo mayor, impresionar a la robotina copiloto de la que te acabás de enamorar eléctricamente
+
+''FIN.''
+
+
+
+:: 3.B.2 {"position":"1000,1500","size":"100,100"}
+Le agradecés profusamente a tu tejón amigo pero le indicás que vas a quedarte en modo suspensión por un tiempo más, ya que has tenido un viaje demasiado largo y estresante hasta allí. Si realmente tu destino prográmatico te espera en la tierra 324,7; lo mejor sería enfrentarlo con todos los circuitos a punto. Descansás por tres o cuatro lunas y abrís los sensores temprano por la mañana.
+La habitación está vacía y a oscuras, salís hacia la calle de ese mundo subterráneo, no encontrás a nadie. Calles, avenidas, automóviles perforadores, sistemas eléctricos de subiluminación, etc. Calles fantasmas. Encontrás una línea de conexión Extranet en las profundidades y descargás la información de que los tejones mutantes duermen durante varias horas al día. Así que te disponés a buscar por tus propios medios esa lanzadera que te llevará a tu misión.
+No te resulta difícil encontrarla, la misma ocupa gran parte de la plaza principal. Lo complicado es encenderla. Todos los controles están en idioma tejón y en aquel sector, olvidate de conseguir señal extranet. Finalmente lográs encenderla y la misma se eleva en el cielo oscuro de la ciudad sumergida con estentóreos ruidos de motores antiguos.
+Colocás como destino la tierra 324,7 y te relajás en tu asiento, la lanzadera debe hacer el resto. Te recostás y cerrás los ojos. Un sonido de alerta en tejoñol te despierta de tu hibernación temprano. En la pantalla observás a un tejón rojo con cara de terrible preocupación y una imagen de una nave estrellando contra la tierra. Aún sin extranet entendés que ese va a ser tu destino si no haces algo rápido. Ponés todo tu esfuerzo para enderezar la nave pero esta acelera cada vez más hacia abajo. Intentás, empujás, apretás, apalanqueás. Finalmente solo te queda rezar al Gran Mecánico para que no se te desinstalen los cables de manera terminal. 
+La nave cae sobre la arena y te enterrás bajo tierra. El golpe de la caída abolla tu Módulo de Procesamiento Central.
+Poco a poco sentís los sensores lumínicos con menor intensidad y te recreás con la imagen del desierto. No del todo triste de saber que es lo último que verás.
+
+[[Continuar|Intro]]
+
+
+
+:: Intro {"position":"600,900","size":"100,100"}
+Eres un robot autónomo de servicio. Te estás reiniciando y buscás señal para actualizaciones: no tenés conexión. Tu programación dice que tenés que cumplir misiones que te sean asignadas, pero tu sistema operativo no registra ninguna. Tampoco encontrás el ingreso de la información de en qué lugar estás ubicado ni en qué año terrestre. Los sensores registran a tu alrededor un horizonte de arena y calor. Tu programación de base dice también que tenés que garantizar tu supervivencia.
+
+Después de hacer un escaneo completo, se te aparecen tres opciones:
+
+[[1- Buscar las mejores condiciones de resguardo y poner el sistema en hibernación.|1) Vir]]
+
+[[2- Avanzar hacia alguna dirección. |2) Alecs]]
+
+[[3-Intentar enviar una señal de socorro al espacio.|3) Sol]]
+
