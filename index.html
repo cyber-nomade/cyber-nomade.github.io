@@ -47,6 +47,7 @@
             margin-top: 0;
             padding: 0 20px;
             background: transparent;
+            width: 100%;
         }
         
         .content-wrapper > *,
@@ -110,6 +111,8 @@
             position: fixed;
             bottom: 20px;
             z-index: 10;
+            max-width: 90%;
+            word-wrap: break-word;
         }
         
         .footer h5 {
@@ -161,6 +164,18 @@
             transform: scale(1.05);
         }
         
+        /* Mejoras para dispositivos táctiles */
+        @media (hover: none) and (pointer: coarse) {
+            .btn {
+                min-height: 44px; /* Tamaño mínimo recomendado para touch */
+            }
+            
+            .btn:active {
+                background: #CD853F;
+                transform: scale(0.95);
+            }
+        }
+        
         .stats {
             display: flex;
             justify-content: center;
@@ -185,32 +200,269 @@
         }
         
         .watermark {
-            position: absolute;
+            position: fixed;
             bottom: 10px;
             left: 10px;
             color: white;
             font-size: 0.4em;
             opacity: 0.7;
             z-index: 3;
+            text-align: center;
+            width: 100%;
+            padding: 0 10px;
         }
         
+        /* Responsive Design */
         @media (max-width: 768px) {
+            .game-container {
+                padding: 10px;
+                padding-top: 100px;
+                padding-bottom: 80px;
+            }
+            
+            .content-wrapper {
+                margin-right: 0;
+                margin-left: 0;
+                max-width: 100%;
+                padding: 0 10px;
+            }
+            
             .title h1 {
-                font-size: 1.8em;
+                font-size: 1.5em;
+                line-height: 1.3;
             }
             
             .title h2 {
-                font-size: 1.3em;
+                font-size: 1.1em;
+                line-height: 1.3;
+            }
+            
+            .description {
+                font-size: 0.7em;
+                line-height: 1.4;
+                margin-bottom: 20px;
             }
             
             .buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
+                margin-bottom: 30px;
             }
             
-            .robot {
-                right: 10%;
-                transform: scale(0.8);
+            .btn {
+                padding: 12px 20px;
+                font-size: 0.7em;
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .stats {
+                gap: 20px;
+            }
+            
+            .stat-number {
+                font-size: 1.2em;
+            }
+            
+            .stat-label {
+                font-size: 0.5em;
+            }
+            
+            .footer {
+                position: relative;
+                bottom: auto;
+                margin-top: 30px;
+                padding: 15px;
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .footer h5 {
+                font-size: 0.7em;
+                text-align: center;
+            }
+            
+            .watermark {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                text-align: center;
+                margin-top: 20px;
+                font-size: 0.3em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .game-container {
+                padding-top: 80px;
+                padding-bottom: 60px;
+            }
+            
+            .title h1 {
+                font-size: 1.3em;
+            }
+            
+            .title h2 {
+                font-size: 1em;
+            }
+            
+            .description {
+                font-size: 0.65em;
+            }
+            
+            .btn {
+                padding: 10px 15px;
+                font-size: 0.65em;
+            }
+            
+            .stats {
+                gap: 15px;
+            }
+            
+            .stat-number {
+                font-size: 1em;
+            }
+            
+            .stat-label {
+                font-size: 0.45em;
+            }
+            
+            .footer {
+                position: relative;
+                bottom: auto;
+                margin-top: 30px;
+                padding: 15px;
+                width: 100%;
+                max-width: 100%;
+                font-size: 0.8em;
+            }
+            
+            .footer h5 {
+                font-size: 0.75em;
+                text-align: center;
+                line-height: 1.4;
+            }
+            
+            .watermark {
+                position: fixed;
+                bottom: 10px;
+                left: 0;
+                text-align: center;
+                font-size: 0.5em;
+                padding: 0 15px;
+                line-height: 1.3;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 390px) {
+            .game-container {
+                padding-top: 70px;
+                padding-bottom: 50px;
+            }
+            
+            .title h1 {
+                font-size: 1.2em;
+            }
+            
+            .title h2 {
+                font-size: 0.95em;
+            }
+            
+            .description {
+                font-size: 0.7em;
+                line-height: 1.5;
+            }
+            
+            .btn {
+                font-size: 0.7em;
+                padding: 12px 15px;
+                min-height: 48px;
+            }
+            
+            .stats {
+                gap: 15px;
+            }
+            
+            .stat-number {
+                font-size: 1em;
+            }
+            
+            .stat-label {
+                font-size: 0.5em;
+            }
+            
+            .footer {
+                position: relative;
+                bottom: auto;
+                margin-top: 25px;
+                padding: 12px;
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .footer h5 {
+                font-size: 0.8em;
+                text-align: center;
+                line-height: 1.5;
+            }
+            
+            .watermark {
+                position: fixed;
+                bottom: 10px;
+                left: 0;
+                text-align: center;
+                font-size: 0.6em;
+                padding: 0 20px;
+                line-height: 1.4;
+                word-wrap: break-word;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .title h1 {
+                font-size: 1.1em;
+            }
+            
+            .title h2 {
+                font-size: 0.9em;
+            }
+            
+            .description {
+                font-size: 0.6em;
+            }
+            
+            .btn {
+                font-size: 0.6em;
+                padding: 8px 12px;
+            }
+            
+            .stats {
+                gap: 10px;
+            }
+            
+            .stat-number {
+                font-size: 0.9em;
+            }
+            
+            .stat-label {
+                font-size: 0.4em;
+            }
+            
+            .footer h5 {
+                font-size: 0.75em;
+            }
+            
+            .watermark {
+                font-size: 0.55em;
+                position: fixed;
+                bottom: 10px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 0 15px;
             }
         }
     </style>
@@ -270,7 +522,9 @@
                 <a href="" target="_blank">Más información</a>
             </h5>
         </div>
-        <div class="watermark">Espero que te diviertas. Ningun derecho reservado, mientras cites a los autores.</div>
+    </div>
+    
+    <div class="watermark">Espero que te diviertas. Ningun derecho reservado, mientras cites a los autores.</div>
     </div>
 </body>
 </html> 
