@@ -16,6 +16,16 @@
 }
 
 .reinicio a:hover {
-background: orange;  /* Cambio al pasar el mouse */
+background: #cd6d33;  /* Cambio al pasar el mouse */
 color: white;
+}
+ 
+/* Pre formateado con estilo neon / pixel-art */
+.ascii-neon {
+    font-size: 25px;            /* tamaño más pequeño para mejor alineación */
+    line-height: 1.5;           /* línea exacta para alineación perfecta */
+    margin: 0;
+    color: #cd6d33;             /* color base neón */
+    display: inline-block;
+    
 }
