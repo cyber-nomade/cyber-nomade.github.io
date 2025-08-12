@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', monospace;
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+a {
+    color: antiquewhite;
+}
+
+.game-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin-right: 450px;
+    margin-left: 50px;
+    margin-top: 0;
+    padding: 0 20px;
+    background: transparent;
+    width: 100%;
+}
+
+.content-wrapper > *,
+.content > * {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content-wrapper > *:first-child,
+.content > *:first-child {
+    margin-top: 0;
+}
+
+.content-wrapper > *:last-child,
+.content > *:last-child {
+    margin-bottom: 0;
+}
+
+.desert-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/desert-robot-hero.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -2;
+}
+
+
+
+.content {
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    color: #f7e9ac;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 5px;
+}
+
+.title h2 {
+    color: #DEB887;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 5px;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border: 2px solid #DEB887;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    z-index: 10;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.footer h5 {
+    /* font-family: 'Arial', sans-serif; */
+    text-align: justify;
+    color: white;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    line-height: 1.5;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    /* background: #DEB887; */
+    margin-bottom: 20px;
+}
+
+.description {
+    color: white;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    text-align: justify;
+    background: rgb(123 15 15 / 34%);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.3),
+        0 2px 4px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background: #DEB887;
+    color: white;
+    border: 2px solid #8B4513;
+    padding: 15px 25px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8em;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #CD853F;
+    transform: scale(1.05);
+}
+
+/* Mejoras para dispositivos táctiles */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-height: 44px; /* Tamaño mínimo recomendado para touch */
+    }
+    
+    .btn:active {
+        background: #CD853F;
+        transform: scale(0.95);
+    }
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.stat-label {
+    color: white;
+    font-size: 0.6em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.watermark-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 0.6em;
+    opacity: 0.7;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.watermark-footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game-container {
+        padding: 10px;
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    
+    .content-wrapper {
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .title h1 {
+        font-size: 1.5em;
+        line-height: 1.3;
+    }
+    
+    .title h2 {
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    
+    .description {
+        font-size: 0.7em;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.7em;
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .stats {
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 1.2em;
+    }
+    
+    .stat-label {
+        font-size: 0.5em;
+    }
+    
+    .footer {
+        position: relative;
+        margin-top: 30px;
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .footer h5 {
+        font-size: 0.7em;
+        text-align: center;
+    }
+    
+    .watermark-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        font-size: 0.3em;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+    .watermark-footer p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    
+    .title h1 {
+        font-size: 1.3em;
+    }
+    
+    .title h2 {
+        font-size: 1em;
+    }
+    
+    .description {
+        font-size: 0.65em;
+    }
+    
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.65em;
+    }
+    
+    .stats {
+        gap: 15px;
+    }
+    
+    .stat-number {
+        font-size: 1em;
+    }
+    
+    .stat-label {
+        font-size: 0.45em;
+    }
+    
+    .footer {
+        position: relative;
+        margin-top: 30px;
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.8em;
+    }
+    
+    .footer h5 {
+        font-size: 0.75em;
+        text-align: center;
+        line-height: 1.4;
+    }
+    
+    .watermark-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        font-size: 0.5em;
+        padding: 10px;
+        line-height: 1.3;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+    .watermark-footer p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 390px) {
+    .game-container {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    
+    .title h1 {
+        font-size: 1.2em;
+    }
+    
+    .title h2 {
+        font-size: 0.95em;
+    }
+    
+    .description {
+        font-size: 0.7em;
+        line-height: 1.5;
+    }
+    
+    .btn {
+        font-size: 0.7em;
+        padding: 12px 15px;
+        min-height: 48px;
+    }
+    
+    .stats {
+        gap: 15px;
+    }
+    
+    .stat-number {
+        font-size: 1em;
+    }
+    
+    .stat-label {
+        font-size: 0.5em;
+    }
+    
+    .footer {
+        position: relative;
+        margin-top: 25px;
+        padding: 12px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .footer h5 {
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    .watermark-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        font-size: 0.6em;
+        padding: 10px;
+        line-height: 1.4;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+    .watermark-footer p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .title h1 {
+        font-size: 1.1em;
+    }
+    
+    .title h2 {
+        font-size: 0.9em;
+    }
+    
+    .description {
+        font-size: 0.6em;
+    }
+    
+    .btn {
+        font-size: 0.6em;
+        padding: 8px 12px;
+    }
+    
+    .stats {
+        gap: 10px;
+    }
+    
+    .stat-number {
+        font-size: 0.9em;
+    }
+    
+    .stat-label {
+        font-size: 0.4em;
+    }
+    
+    .footer h5 {
+        font-size: 0.75em;
+    }
+    
+    .watermark-footer {
+        font-size: 0.55em;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+    .watermark-footer p {
+        font-size: smaller;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Estilos específicos para móvil en modo horizontal (landscape) */
+@media (max-width: 950px) and (max-height: 500px) and (orientation: landscape) {
+    .game-container {
+        padding: 0 80px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .content-wrapper {
+        margin-right: 200px; /* Acercar el texto al robot */
+        margin-left: 20px;
+        max-width: 60%;
+        /* padding: 0 10px; */
+    }
+    
+    .separator {
+        height: 0px;
+    }
+
+    .title h1 {
+        font-size: 1.2em; /* Reducir tamaño de letra */
+        line-height: 1.2;
+    }
+    
+    .title h2 {
+        font-size: 0.9em; /* Reducir tamaño de letra */
+        line-height: 1.2;
+    }
+    
+    .description {
+        font-size: 0.6em; /* Reducir tamaño de letra */
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    
+    .buttons {
+        flex-direction: row; /* Mantener botones en fila */
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.5em; /* Reducir tamaño de letra */
+        min-height: 36px;
+    }
+    
+    .stats {
+        gap: 15px;
+    }
+    
+    .stat-number {
+        font-size: 0.9em; /* Reducir tamaño de letra */
+    }
+    
+    .stat-label {
+        font-size: 0.35em; /* Reducir tamaño de letra */
+    }
+    
+    .footer {
+        position: relative;
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .footer h5 {
+        font-size: 0.5em; /* Reducir tamaño de letra */
+        text-align: left;
+        line-height: 1.3;
+    }
+    
+    .watermark-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        font-size: 0.4em; /* Reducir tamaño de letra */
+        padding: 8px;
+        line-height: 1.2;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+    .watermark-footer p {
+        margin: 0;
+        padding: 0;
+    }
+}
