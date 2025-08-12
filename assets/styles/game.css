@@ -6,3 +6,16 @@
     text-align: justify;
     font-size: 0.9em;
 }
+.reinicio a {
+    color: #f7e9ac;          /* Color del texto */
+    font-weight: bold;   /* Negrita */
+    /*background: yellow;   Fondo tipo marcador */
+    padding: 4px 8px;    /* Espaciado */
+    border-radius: 6px;  /* Bordes redondeados */
+    text-decoration: none;
+}
+
+.reinicio a:hover {
+background: orange;  /* Cambio al pasar el mouse */
+color: white;
+}
