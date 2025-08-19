@@ -7,7 +7,7 @@
 **CyberNómade** es una novela interactiva del tipo "elige tu propia aventura" diseñada con Twine y enriquecida con imagenes, animaciones y sonidos.
 <img width="1920" height="715" alt="image" src="https://github.com/user-attachments/assets/ee3d821e-e0d1-44a4-84c0-a43611aae25c" />
 
-
+**[Empezar a jugar!](https://cyber-nomade.github.io/)**
 ## 📚 Sinopsis
 
 Eres un robot autónomo de servicio. Te estás reiniciando y buscás señal para actualizaciones: no tenés conexión.
