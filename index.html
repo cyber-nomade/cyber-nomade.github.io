@@ -13,7 +13,7 @@
         <div class="orientation-content">
             <div class="rotate-icon">📱</div>
             <p>Gira tu dispositivo para una mejor experiencia</p>
-            <button id="fullscreenBtn">Pantalla completa</button>
+            <button onclick="pantallaCompleta()">Pantalla completa</button>
         </div>
     </div>
 
@@ -37,7 +37,7 @@
                 </div>
                 
                 <div class="buttons">
-                    <button class="btn" onclick="window.location.href='game.html'">INICIAR AVENTURA</button>
+                    <button class="btn" onclick="iniciarJuego()">INICIAR AVENTURA</button>
                     <button class="btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf4ylsSmzhSiOMQCrtgjghKoUxtFuCxs8meMeKAW9vQvGJ4ug/viewform?usp=dialog', '_blank')">DAR FEEDBACK</button>
                 </div>
                 
@@ -77,26 +77,31 @@
             <p>ver 1.0.1</p>
         </footer>
     </div>
+    <div id="twine-container" style="display:none; width:100%; height:100%;">
+        <iframe src="game.html" frameborder="0" style="width:100%; height:100%;"></iframe>
+    </div>
     <script>
-        const btn = document.getElementById("fullscreenBtn");
-      
-        btn.addEventListener("click", async () => {
-          try {
-            // Pedir fullscreen en el documento
-            if (document.documentElement.requestFullscreen) {
-              await document.documentElement.requestFullscreen();
+        function salirJuego() {
+            document.querySelector(".game-container").style.display = "flex";
+            document.getElementById("twine-container").style.display = "none";
+        }
+        async function iniciarJuego() {
+            // Ocultar botones y mostrar el juego
+            document.querySelector(".game-container").style.display = "none";
+            document.getElementById("twine-container").style.display = "block";
             }
-      
-            // Intentar forzar landscape
-            if (screen.orientation && screen.orientation.lock) {
-              await screen.orientation.lock("landscape");
+        async function pantallaCompleta() {
+            try {
+                if (document.documentElement.requestFullscreen) {
+                await document.documentElement.requestFullscreen();
+                }
+                if (screen.orientation && screen.orientation.lock) {
+                await screen.orientation.lock("landscape");
+                }
+            } catch (err) {
+                console.log("Error al pedir fullscreen:", err);
             }
-      
-            console.log("Pantalla completa en landscape activada.");
-          } catch (err) {
-            console.warn("No se pudo bloquear landscape:", err);
-          }
-        });
+        }
       </script>
 </body>
 </html> 

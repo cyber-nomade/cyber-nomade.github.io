@@ -24,6 +24,23 @@ a {
     color: antiquewhite;
 }
 
+#twine-container {
+    position: fixed; /* ocupa toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none; /* oculto por defecto */
+    background: black; /* opcional, para evitar flashes */
+}
+
+#twine-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
 .game-container {
     width: 100%;
     min-height: 100vh;
