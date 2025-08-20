@@ -599,3 +599,90 @@ a {
         padding: 0;
     }
 }
+
+/* Mensaje de orientación para dispositivos móviles en portrait */
+.orientation-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.orientation-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.rotate-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+    animation: rotateToLandscape 2s infinite ease-in-out;
+}
+
+.orientation-content p {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.orientation-content button {
+    background: #f7e9ac;
+    color: #8B4513;
+    border: 3px solid #DEB887;
+    padding: 15px 25px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.orientation-content button:hover {
+    background: #DEB887;
+    color: #f7e9ac;
+    transform: scale(1.05);
+}
+
+@keyframes rotateToLandscape {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    50% { 
+        transform: rotate(90deg); 
+    }
+    100% { 
+        transform: rotate(0deg); 
+    }
+}
+
+/* Mostrar mensaje de orientación solo en móviles en modo portrait */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .orientation-message {
+        display: flex;
+    }
+    
+    .game-container {
+        display: none;
+    }
+}
+
+/* Ocultar mensaje de orientación en modo landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .orientation-message {
+        display: none;
+    }
+    
+    .game-container {
+        display: flex;
+    }
+}

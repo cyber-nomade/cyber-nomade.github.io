@@ -8,6 +8,15 @@
 
 </head>
 <body>
+    <!-- Mensaje de orientación para móviles en portrait -->
+    <div id="orientation-message" class="orientation-message">
+        <div class="orientation-content">
+            <div class="rotate-icon">📱</div>
+            <p>Gira tu dispositivo para una mejor experiencia</p>
+            <button id="fullscreenBtn">Pantalla completa</button>
+        </div>
+    </div>
+
     <div class="game-container">
         <div class="desert-background"></div>
         
@@ -68,6 +77,26 @@
             <p>ver 1.0.1</p>
         </footer>
     </div>
-</body>
+    <script>
+        const btn = document.getElementById("fullscreenBtn");
+      
+        btn.addEventListener("click", async () => {
+          try {
+            // Pedir fullscreen en el documento
+            if (document.documentElement.requestFullscreen) {
+              await document.documentElement.requestFullscreen();
+            }
+      
+            // Intentar forzar landscape
+            if (screen.orientation && screen.orientation.lock) {
+              await screen.orientation.lock("landscape");
+            }
+      
+            console.log("Pantalla completa en landscape activada.");
+          } catch (err) {
+            console.warn("No se pudo bloquear landscape:", err);
+          }
+        });
+      </script>
 </body>
 </html> 
