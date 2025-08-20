@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberNómade, 28 lunas sin códigos</title>
     <link rel="stylesheet" href="assets/styles/main.css">
+    <script src="assets/scripts/index.js" defer></script>
 
 </head>
 <body>
@@ -80,28 +81,5 @@
     <div id="twine-container" style="display:none; width:100%; height:100%;">
         <iframe src="game.html" frameborder="0" style="width:100%; height:100%;"></iframe>
     </div>
-    <script>
-        function salirJuego() {
-            document.querySelector(".game-container").style.display = "flex";
-            document.getElementById("twine-container").style.display = "none";
-        }
-        async function iniciarJuego() {
-            // Ocultar botones y mostrar el juego
-            document.querySelector(".game-container").style.display = "none";
-            document.getElementById("twine-container").style.display = "block";
-            }
-        async function pantallaCompleta() {
-            try {
-                if (document.documentElement.requestFullscreen) {
-                await document.documentElement.requestFullscreen();
-                }
-                if (screen.orientation && screen.orientation.lock) {
-                await screen.orientation.lock("landscape");
-                }
-            } catch (err) {
-                console.log("Error al pedir fullscreen:", err);
-            }
-        }
-      </script>
 </body>
 </html> 
