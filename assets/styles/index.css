@@ -630,44 +630,236 @@ a {
     justify-content: center;
     align-items: center;
     font-family: 'Press Start 2P', monospace;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Patrones digitales en el fondo */
+.orientation-message::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(90deg, rgba(255, 140, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(rgba(255, 140, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    animation: scanLines 3s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Efecto de glitch en el título */
+.main-title {
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+}
+
+@keyframes scanLines {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}
+
+/* Brackets en las esquinas */
+.orientation-message::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FF8C00;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.orientation-message .corner-bracket {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FF8C00;
+    z-index: 1;
+    bottom: 20px;
+    right: 20px;
+    border-left: none;
+    border-top: none;
 }
 
 .orientation-content {
     text-align: center;
     color: white;
     padding: 20px;
+    max-width: 400px;
+    width: 90%;
 }
 
-.rotate-icon {
-    font-size: 4em;
-    margin-bottom: 20px;
-    animation: rotateToLandscape 2s infinite ease-in-out;
+/* Icono del sistema */
+.system-icon {
+    margin-bottom: 30px;
 }
 
-.orientation-content p {
-    font-size: 1.2em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    line-height: 1.5;
-    margin-bottom: 20px;
+.phone-icon {
+    width: 60px;
+    height: 80px;
+    background: #000;
+    border: 2px solid #FF8C00;
+    border-radius: 8px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
 }
 
-.orientation-content button {
-    background: #f7e9ac;
+.phone-screen {
+    width: 40px;
+    height: 50px;
+    background: linear-gradient(45deg, #FF8C00, #FFA500);
+    margin: 5px auto;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.phone-screen::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 40px;
+    background: linear-gradient(45deg, #FF8C00, #FFA500, #FFD700);
+    border-radius: 1px;
+    animation: screenGlow 2s infinite alternate;
+}
+
+@keyframes screenGlow {
+    0% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+/* Títulos */
+.main-title {
+    color: #FF8C00;
+    font-size: 1.8em;
+    text-shadow: 0 0 10px #FF8C00;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #FF8C00;
+    font-size: 0.9em;
+    text-shadow: 0 0 8px #FF8C00;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Caja de instrucciones */
+.instruction-box {
+    background: rgba(139, 69, 19, 0.8);
+    border: 2px solid #FF8C00;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
+}
+
+.instruction-text {
+    color: #E6E6E6;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+.instruction-highlight {
+    color: #FF8C00;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 0 8px #FF8C00;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: #FF8C00;
     color: #8B4513;
-    border: 3px solid #DEB887;
+    border: none;
     padding: 15px 25px;
     font-family: 'Press Start 2P', monospace;
-    font-size: 1em;
+    font-size: 0.7em;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
     text-shadow: none;
     transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
 }
 
-.orientation-content button:hover {
-    background: #DEB887;
-    color: #f7e9ac;
-    transform: scale(1.05);
+.btn-primary:hover {
+    background: #FFA500;
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #FF8C00;
+    border: 2px solid #FF8C00;
+    padding: 15px 25px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #FF8C00;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.3);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 140, 0, 0.1);
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.5);
+}
+
+/* Información de estado */
+.status-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.status-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #FF8C00;
+    font-size: 0.6em;
+    text-shadow: 0 0 5px #FF8C00;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.status-bullet {
+    color: #FF8C00;
+    font-size: 0.8em;
+    text-shadow: 0 0 5px #FF8C00;
 }
 
 @keyframes rotateToLandscape {
@@ -690,6 +882,62 @@ a {
     
     .game-container {
         display: none;
+    }
+    
+    .main-title {
+        font-size: 1.5em;
+    }
+    
+    .subtitle {
+        font-size: 0.8em;
+    }
+    
+    .instruction-highlight {
+        font-size: 0.9em;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        font-size: 0.6em;
+        padding: 12px 20px;
+    }
+    
+    .status-line {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    .main-title {
+        font-size: 1.3em;
+    }
+    
+    .subtitle {
+        font-size: 0.7em;
+    }
+    
+    .instruction-highlight {
+        font-size: 0.8em;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        font-size: 0.55em;
+        padding: 10px 15px;
+    }
+    
+    .status-line {
+        font-size: 0.45em;
+    }
+    
+    .phone-icon {
+        width: 50px;
+        height: 70px;
+    }
+    
+    .phone-screen {
+        width: 35px;
+        height: 45px;
     }
 }
 

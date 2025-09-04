@@ -20,3 +20,8 @@ async function pantallaCompleta() {
         console.log("Error al pedir fullscreen:", err);
     }
 }
+
+function continuarSinPantallaCompleta() {
+    document.getElementById("orientation-message").style.display = "none";
+    document.querySelector(".game-container").style.display = "flex";
+}

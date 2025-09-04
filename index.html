@@ -11,10 +11,40 @@
 <body>
     <!-- Mensaje de orientación para móviles en portrait -->
     <div id="orientation-message" class="orientation-message">
+        <div class="corner-bracket"></div>
         <div class="orientation-content">
-            <div class="rotate-icon">📱</div>
-            <p>Gira tu dispositivo para una mejor experiencia</p>
-            <button onclick="pantallaCompleta()">Pantalla completa</button>
+            <div class="system-icon">
+                <div class="phone-icon">
+                    <div class="phone-screen"></div>
+                </div>
+            </div>
+            <h1 class="main-title">CYBERNÓMADE</h1>
+            <h2 class="subtitle">INICIALIZACIÓN DEL SISTEMA</h2>
+            
+            <div class="instruction-box">
+                <p class="instruction-text">Gira tu dispositivo para una</p>
+                <p class="instruction-highlight">MEJOR EXPERIENCIA</p>
+                <p class="instruction-text">Optimizado para pantalla completa</p>
+            </div>
+            
+            <div class="button-container">
+                <button class="btn-primary" onclick="pantallaCompleta()">PANTALLA COMPLETA</button>
+                <button class="btn-secondary" onclick="continuarSinPantallaCompleta()">CONTINUAR SIN PANTALLA COMPLETA</button>
+            </div>
+            
+            <div class="status-info">
+                <div class="status-line">
+                    <span>SISTEMA: OPERATIVO</span>
+                    <span class="status-bullet">●</span>
+                </div>
+                <div class="status-line">
+                    <span>CONEXIÓN: ESTABLECIDA</span>
+                    <span class="status-bullet">●</span>
+                </div>
+                <div class="status-line">
+                    <span>ESTADO: LISTO</span>
+                </div>
+            </div>
         </div>
     </div>
 
