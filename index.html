@@ -6,9 +6,47 @@
     <title>CyberNómade, 28 lunas sin códigos</title>
     <link rel="stylesheet" href="assets/styles/index.css">
     <script src="assets/scripts/index.js" defer></script>
+    
+    <!-- Audio para música de fondo -->
+    <audio id="background-music" loop preload="auto">
+        <source src="assets/audio/background-music.mp3" type="audio/mpeg">
+        <source src="assets/audio/background-music.ogg" type="audio/ogg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
 
 </head>
 <body>
+    <!-- Pantalla de activación de audio -->
+    <div id="audio-activation-screen" class="audio-activation-screen">
+        <div class="audio-activation-content">
+            <div class="audio-icon-large">
+                <span class="audio-symbol">🎵</span>
+            </div>
+            <h1 class="audio-title">CYBERNÓMADE</h1>
+            <h2 class="audio-subtitle">ACTIVACIÓN DEL SISTEMA DE AUDIO</h2>
+            
+            <div class="audio-description">
+                <p>¿Te gustaría activar la música de fondo para una experiencia más inmersiva?</p>
+                <p class="audio-note">Puedes cambiar esta configuración en cualquier momento.</p>
+            </div>
+            
+            <div class="audio-buttons">
+                <button class="btn-audio-yes" onclick="activateAudio(true)">
+                    <span class="btn-icon">🔊</span>
+                    SÍ, ACTIVAR AUDIO
+                </button>
+                <button class="btn-audio-no" onclick="activateAudio(false)">
+                    <span class="btn-icon">🔇</span>
+                    NO, CONTINUAR SIN AUDIO
+                </button>
+            </div>
+            
+            <div class="audio-footer">
+                <p>El audio se reproduce en loop continuo</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Mensaje de orientación para móviles en portrait -->
     <div id="orientation-message" class="orientation-message">
         <div class="corner-bracket"></div>
@@ -49,6 +87,13 @@
     </div>
 
     <div class="game-container">
+        <!-- Control de audio -->
+        <div class="audio-control">
+            <button id="audio-toggle" class="audio-btn" onclick="toggleAudio()" title="Haz clic en cualquier parte para activar el audio">
+                <span id="audio-icon">⏸️</span>
+            </button>
+        </div>
+        
         <div class="desert-background"></div>
         
         <div class="content-wrapper">
