@@ -120,6 +120,7 @@ async function iniciarJuego() {
     document.getElementById("twine-container").style.display = "block";
 }
 
+
 async function pantallaCompleta() {
     try {
         if (document.documentElement.requestFullscreen) {
@@ -128,6 +129,13 @@ async function pantallaCompleta() {
         if (screen.orientation && screen.orientation.lock) {
             await screen.orientation.lock("landscape");
         }
+        
+        // Ocultar mensaje de orientación y mostrar juego
+        const orientationMessage = document.getElementById('orientation-message');
+        const gameContainer = document.querySelector('.game-container');
+        
+        if (orientationMessage) orientationMessage.style.display = 'none';
+        if (gameContainer) gameContainer.style.display = 'flex';
     } catch (err) {
         console.log("Error al pedir fullscreen:", err);
     }
