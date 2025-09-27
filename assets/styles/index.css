@@ -191,6 +191,105 @@ a {
     font-weight: bold;
 }
 
+.info-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #dca58b;
+    border: 1px solid #8B4513;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: #aa5a45;
+    margin-right: 8px;
+    vertical-align: middle;
+    box-shadow: 
+        2px 2px 0px #654321,
+        inset 1px 1px 0px #FFA500;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.sound-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #d1aca6;
+    border: 2px solid #8B4513;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #8B4513;
+    margin-right: 8px;
+    vertical-align: middle;
+    box-shadow: 
+        2px 2px 0px #654321,
+        inset 1px 1px 0px #e6c4be;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.web-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #e4885d;
+    border: 2px solid #8B4513;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #8B4513;
+    margin-right: 8px;
+    vertical-align: middle;
+    box-shadow: 
+        2px 2px 0px #654321,
+        inset 1px 1px 0px #f0a070;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.feather-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #f0901b;
+    border: 2px solid #8B4513;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #8B4513;
+    margin-right: 8px;
+    vertical-align: middle;
+    box-shadow: 
+        2px 2px 0px #654321,
+        inset 1px 1px 0px #ffb347;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.sensor-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #c85046;
+    border: 2px solid #8B4513;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #8B4513;
+    margin-right: 8px;
+    vertical-align: middle;
+    box-shadow: 
+        2px 2px 0px #654321,
+        inset 1px 1px 0px #e06666;
+    font-family: 'Press Start 2P', monospace;
+}
+
 .separator {
     width: 100%;
     height: 2px;
