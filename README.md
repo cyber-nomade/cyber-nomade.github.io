@@ -27,6 +27,19 @@ Intentá sobrevivir en el desierto mientras investigás tu mision, tu pasado y e
 - **Responsive Design** - Compatible con celulares y tablets
 
 
+## Changelog
+### Version 1.2.0
+- Fondo de estrellas en la lectura del juego
+- Música de fondo 
+- Opción de pantalla completa, activar y silenciar la música
+- Correcciones de estilos
+
+## TODO:
+- Traduccion al inglés
+- Animaciones al pasar de pagina
+- Imagenes (ascii + pixelart)
+
+
 ## 👥 Créditos
 
 **Escrito por:**
@@ -52,6 +65,6 @@ Este proyecto se distribuye bajo la filosofía de código abierto. Se permite el
 
 ---
 
-**Versión:** 1.0.1
+**Versión:** 1.2.0
 
 *Espero que te diviertas explorando como nos divertimos nosotros escribiendo*
