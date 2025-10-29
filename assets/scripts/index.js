@@ -1,4 +1,3 @@
-console.log('=== SCRIPT INDEX.JS CARGADO ===');
 
 // Variables globales para el audio
 let backgroundMusic;
@@ -34,11 +33,6 @@ function setupAudioEvents() {
         // Manejar errores de carga
         backgroundMusic.addEventListener('error', function(e) {
             console.log('Error de audio:', e);
-        });
-        
-        // Asegurar que el audio esté listo para reproducir
-        backgroundMusic.addEventListener('canplaythrough', function() {
-            console.log('Audio listo para reproducir');
         });
     }
 }
@@ -113,7 +107,6 @@ function playBackgroundMusic() {
         
         if (playPromise !== undefined) {
             playPromise.then(() => {
-                console.log('Audio iniciado correctamente');
             }).catch(error => {
                 console.log('No se pudo reproducir el audio:', error);
                 // Intentar cargar el audio si hay error
@@ -170,7 +163,20 @@ function checkAudioLoop() {
 // Verificar el estado del audio cada 5 segundos
 setInterval(checkAudioLoop, 5000);
 
-function salirJuego() {
+function salirJuego() {    
+    // Detener la intro si está reproduciéndose
+    if (introAudio) {
+        try {
+            introAudio.pause();
+            introAudio.currentTime = 0;
+        } catch (e) {
+            console.log('Error al detener intro:', e);
+        }
+    }
+    
+    // Marcar que ya no estamos en intro
+    isIntroPlaying = false;
+    
     document.querySelector(".game-container").style.display = "flex";
     document.getElementById("twine-container").style.display = "none";
     
@@ -180,27 +186,18 @@ function salirJuego() {
     }
 }
 
-async function iniciarJuego() {
-    console.log('=== INICIAR JUEGO LLAMADO ===');
-    
+async function iniciarJuego() {    
     // Reproducir audio de intro al iniciar el juego
-    console.log('play intro music');
     
     playIntroMusic();
     
-    console.log('Ocultando game-container y mostrando twine-container');
     document.querySelector(".game-container").style.display = "none";
     document.getElementById("twine-container").style.display = "block";
-    
-    console.log('=== INICIAR JUEGO COMPLETADO ===');
 }
 
 // Función para reproducir música de intro
 function playIntroMusic() {
-    console.log("playIntroMusic");
-    
     if (!isAudioEnabled) {
-        console.log('Audio deshabilitado: no se reproducirá la intro');
         return;
     }
 
@@ -229,22 +226,18 @@ function playIntroMusic() {
     // Crear un nuevo elemento de audio para la intro y guardarlo globalmente
     introAudio = new Audio('assets/audio/intro.wav');
     introAudio.volume = 0.3; // Mismo volumen que la música de fondo
-    introAudio.loop = false; // reproducir una vez
+    introAudio.loop = true; // reproducir en loop continuo
     
     // Reproducir la intro
     const p = introAudio.play();
     if (p && typeof p.then === 'function') {
-        p.then(() => console.log('Intro reproduciéndose'))
+        p.then(() => {})
          .catch(error => {
             console.log('No se pudo reproducir el audio de intro:', error);
          });
     }
     
-    // Cuando termine la intro, mantener portada silenciada (no reanudar)
-    introAudio.addEventListener('ended', function() {
-        console.log('Intro terminada');
-        isIntroPlaying = false;
-    });
+    // La intro se reproduce en loop, no necesita evento 'ended'
 }
 
 // Exponer funciones en el objeto global para evitar problemas de alcance
